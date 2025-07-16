@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "iran_Light";
+  src: url("../fonts/iran-light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iran_Bold";
+  src: url("../fonts/iran-bold.woff2") format("woff2");
+}
