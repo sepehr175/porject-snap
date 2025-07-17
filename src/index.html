@@ -1,847 +1,0 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب سایت اسنپ</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="./img/Untitled.png" type="image/x-icon">
-
-</head>
-<body class="dark:bg-bg_dark1">
-    <!--nav-->
-    <div class="w-full border border-1 bg-white dark:bg-bg_dark1 z-50" style="position: sticky !important;top: 0;" >
-        <div class="sm:w-full md:w-3/4 h-70px md:h-90px m-auto flex justify-start items-center  ">
-            <div class="flex md:hidden justify-between w-full flex-nowrap mx-5">
-         <svg id="hamber_menu" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-            class="bi bi-list cursor-pointer dark:bg-white dark:rounded-sm" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-         </svg>
-             <img src="./img/snappTextLogo.svg" alt="">
-            </div>
-             <img src="./img/snappTextLogo.svg" class="md:flex hidden" alt="">
-             <ul class="md:flex hidden justify-start items-center text-clamp dark:text-white font-iran_Light mx-7 list-none h-55px">
-                <li class="flex justify-start items-center font-iran_Light relative cursor-default group/item hover:text-green_snap ">سوپر اپ اسنپ
-                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                        class="bi bi-chevron-down mx-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                    <ul class="justify-start items-start text-text_nav font-iran_Light group-hover/item:flex hidden w-170px absolute top-6
-                    list-none dark:text-white bg-white dark:bg-bg_dark2 border border-1 flex-col rounded-lg leading-9  ">
-                        <li class=" flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">درخواست تاکسی</li>
-                        <li class=" flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">پیک موتوری</li>
-                        <li class=" flex items-center px-4 py-1 cursor-pointer hover:text-green_snap"> سفارش آنلاین غذا</li>
-                        <li class=" flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">سوپر مارکت </li>
-                        <li class=" flex items-center px-4 py-1 cursor-pointer hover:text-green_snap"> رزرو بیست هواپیما</li>
-                    </ul>
-                </li>
-                <li>
-                    <li class="flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">ثبت‌ نام رانندگان اسنپ</li>
-                    <li class="flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">باشگاه رانندگان </li>
-                    <li class="flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">پنل سازمانی</li>
-                    <li class="flex items-center px-4 py-1 cursor-pointer hover:text-green_snap">بلاگ</li>
-                    <li class="flex items-center px-4 py-1 cursor-pointer hover:text-green_snap group/item_about">درباره اسنپ
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                        class="bi bi-chevron-down mx-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                         <ul class="group-hover/item_about:flex hidden w-170px absolute top-14 list-none text-text_nav dark:text-white
-          bg-white dark:bg-bg_dark2 border border-1 flex-col justify-start items-start font-iran_Light rounded-lg leading-9 z-50">
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">فرصت شغلی </li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">درباره ما</li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">تماس با ما</li>
-                    </ul>
-                </li>
-                    <!-- HTML: نویگیشن با دکمه تغییر تم -->
-<nav class="flex justify-between items-center p-4 bg-white dark:bg-gray-900 shadow">
-
-  <!-- دکمه تغییر تم -->
-  <button id="themeToggle" class="text-2xl text-yellow-500 dark:text-white">
-    🌙
-  </button>
-</nav>
-             </ul>
-        </div>
-    </div>
-
-
-
-    <!-- nav -->
-
-
-    <!-- nav_res -->
-     <div id="nav_res" class=" hidden w-full bg-bg_nav_res text-xs z-50" style="position: fixed !important;height: 100%;">
-     <div class="sm:w-1/2 w-full bg-white dark:bg-bg_dark1 border border-l-1 min-h-screen sm: flex md:hidden">
-      <ul class="flex justify-start items-start flex-col w-full dark:text-white mx-7 font-iran_Light">
-        <li class="flex group/item flex-col items-center w-11/12 font-iran_Bold my-4 cursor-default">
-            <div class="flex justify-between w-full items-center">
-                <span>سوپر اپ اسنپ</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                            class="bi bi-chevron-down mx-2" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                        </svg>
-            </div>
-               <ul class="group-hover/item:flex hidden justify-start items-start w-full list-none text-text_nav dark:text-white font-iran_Bold
-               bg-whitebg-white dark:bg-bg_dark2 rounded-lg leading-7 flex-col ">
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">درخواست تاکسی</li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">پیک موتوری</li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">سفارش آنلاین غذا</li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">سوپرمارکت</li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">رزرو بیست هواپیما</li>
-                </ul>
-
-        </li>
-        <li class="flex cursor-pointe items-center my-4 w-full hover:text-green_snap">ثبت‌ نام راننده اسنپ
-            <span class="text-green_snap text-sm mx-2">(سواری موتور و وانت)
-            </span>
-        </li>
-        <li class="flex cursor-pointe items-center my-4 w-full hover:text-green_snap">باشگارانندگان</li>
-        <li class="flex cursor-pointe items-center my-4 w-full hover:text-green_snap">پنل سازمانی</li>
-        <li class="flex cursor-pointe items-center my-4 w-full hover:text-green_snap">بلاگ</li>
-        <li class="group/item_about flex flex-col items-center cursor-default
-                 font-iran_Bold w-11/12 my-4">
-                 <div class="flex justify-between w-full items-center">
-                    <span>درباره اسنپ</span>
-                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                    class="bi bi-chevron-down mx-2" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                     </svg>
-                 </div>
-                <ul class="group-hover/item_about:flex hidden justify-start items-start w-full list-none text-text_nav dark:text-white font-iran_Bold
-               bg-whitebg-white dark:bg-bg_dark2 rounded-lg leading-9 flex-col">
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">فرصت های شغلی
-                </li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">درباره ما
-                </li>
-                <li class="flex  cursor-pointer hover:text-green_snap py-1 px-4 items-center">تماس با ما
-                </li>
-                </ul>
-                 
-        </li>
-        <hr class="divide-solid w-full my-2">
-        <li class=" flex flex-col group/item_about w-11/12 items-center cursor-default font-iran_Bold text-green_snap my-4 ">
-            <div class="flex justify-between items-center w-full">
-                <span>اپلیکیشن اسنپ</span>
-                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                            class="bi bi-chevron-down mx-2" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                        </svg>
-            </div>
-          <ul class="group-hover/item_about:flex hidden w-full 
-    list-none text-text_nav dark:text-white
-bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold rounded-lg leading-9">
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">دانلود مستقیم</li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">دانلود از کافه بازار</li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">دانلوداز مایکت</li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">(ios) وب اپلیکیشن اسنپ </li>
-                        <li class="flex items-center cursor-pointer px-4 py-1 hover:text-green_snap">دانلود از اپ استور</li>
-                    </ul>
-
-            
-        </li>
-
-      </ul>      
-    </div>
-     </div>
-     <script>
-    const hamberMenu = document.getElementById("hamber_menu");
-    const navRes = document.getElementById("nav_res");
-
-    hamberMenu.addEventListener("click", () => {
-        navRes.classList.toggle("hidden");
-    });
-</script>
-
-     <!-- nav_res -->
-
-
-
-    <!-- intro -->
-     <div class="w-full flex">
-        <div class="flex justify-center items-end md:2/3 lg:1/2 bg-green_snap flex-col text-white px-7 py-2">
-            <div class=" md:w-3/4 w-full ">
-                <h1 class="text-clamp_intro font-iran_Bold md:leading-[60px]
-     lg:leading-[50px]">تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!</h1>
-
-     <p class="text-clamp_des font-iran_Light leading-10 my-5">از درخواست خودرو گرفته تا سفارش غذا، خرید
-                    سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با
-                    اسنپ انجام دهید.</p>
-                 
-       <div class="md:flex w-full justify-start hidden">
-        <input type="text" class="bg-transparent border-b-2 outline-none mx-3 placeholder-white text-right
-    py-1" dir="ltr" placeholder="09*********">
-    <div class="bg-white text-green_snap cursor-pointer font-iran_Light
-                    rounded-md px-5 py-2">ارسال لینک
-        </div>  
-            </div>
-            <div class="border border-text_muted rounded-md text-text_muted px-6 py-3 cursor-pointer
-        font-iran_Light mt-8 mb-3 md:inline-block hidden hover:bg-bg_muted w-4/12 flex  ">ورود به اپلیکیشن اسنپ</div>
-       </div>   
-       <div class="border border-text_muted rounded-md text-black px-4 py-3 cursor-pointer
-      font-iran_Light mt-8 mb-3 md:hidden flex justify-center items-center bg-white w-full">دانلود اپلیکیشن اسنپ</div>
-        </div>
-        <img src="./img/intro_desktop.jpg" class="hidden md:flex md:w-1/3 lg:w-1/2 object-cover"
-            style="transform: scaleX(-1);" alt="">
-
-     </div>
-      <!-- intro -->
-
-      <!-- image_market -->
-       <div class="hidden md:flex flex-wrap w-3/4 justify-around items-center mx-auto my-20 ">
-        <img class="my-2" height="47" width="160" src="./img/market/app_store.svg" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/bazaar.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/direct-download-badge.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/myketmarket.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/snapp-pwa.png" alt="">
-       </div>
-
-
-     <!-- image_market -->
-
-
-       <!-- services -->
-    <div class="w-full bg-bg_gray dark:bg-bg_dark1 flex justify-center items-center flex-col">
-        <h1 class="text-clamp_intro text-text_nav dark:text-white font-iran_Bold my-8">یک اپلیکیشن، برای تمام نیازها </h1>
-
-        <div class="w-3/4 flex flex-wrap justify-start items-start mx-auto">
-
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg" width="48" height="48"
-                     class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">تاکسی اینترنتی</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">درخواست آنلاین خوردرو</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                  <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/food.svg" width="48" height="48" 
-                  class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">سفارش آنلاین غذا</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">سفارش آنلاین غذا و شیرینی اسنپ</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://jek.snapp.ir/icons/market/Market-Orange-Final.png" width="48" height="48"
-                     class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">سوپر مارکت آنلاین</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">تهیه اقلام روزانه با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                  <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/bike.svg" width="48" height="48"
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">پیک موتوری </h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center ">حمل نقل انواع بسته</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/pickup.svg" width="48" height="48"
-                     class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">درخواست وانت</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">حمل نقل انواع بار</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/Credit.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">سرویس اعتباری </h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خرید قسطی با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/app/fdom-t.png" width="48" height="48"
-                     class=" marginx-sm" loading="lazy" style="transform: scale(1.18); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">خرید بلیت هواپیما</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خرید بلیت پرواز های داخلی</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                  <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/intflight.svg" width="48" height="48"
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center"> بلیت هواپیما خارجی</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center"> خرید بلیت پرواز خارجی</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/hotel.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">رزرو هتل</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">رزرو آنلاین هتل</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/bus.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">بلیت اتوبوس،</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">گردشگری با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/train.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">بلیت قطار</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">گردشگری با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                  <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/shop.svg" width="48" height="48"
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">فروشگاه</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">فروشگاه اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/doctor.svg" width="48" height="48" 
-                    class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">پزشک و مشاور</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">درمان با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/pharmacy.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">داروخانه</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">داروخانه آنلاین اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://jek.snapp.ir/Redesign-Icons/Insurance.png" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">بیمه</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خرید آنلاین بیمه با اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/moving.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">اسباب‌ کشی منزل</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خدمات  اسباب‌ کشی،</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/driver.svg" width="48" height="48"
-                     class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">ثبت نام راننده</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">ثبت‌ نام تاکسی اینترنتی</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/club.svg" width="48" height="48" 
-                    class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">اسنپ!کلاب</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">! باشگاه مشتریان اسنپ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                    <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/wallet.png" width="48" height="48" 
-                    class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">خرید شارژ</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خرید آنلاین شارژ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/wallet.png" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">خرید بسته اینترنت</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">خرید بسته اینترنت</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/3 my-4">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                  <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/Pro.png" width="48" height="48"
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">اسنپ پرو</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">اشتراک حرفه ای اسنپ</p>
-                    </div>
-                </div>
-            </div>
-                    <div class="w-1/3 my-4 m-auto">
-                <div class="w-3/4 bg-white rounded-2xl flex lg:flex-row flex-col shadow py-3 px-2 items-center">
-                   <img alt="" src="https://web-cdn.snapp.ir/snappir-marketing/images/food/foodroicon.svg" width="48" height="48" 
-                   class=" marginx-sm" loading="lazy" style="transform: scale(1); transform-origin: right bottom;">
-
-                    <div class="flex flex-col justify-center lg:items-start items-center lg:text-right text-center">
-                        <h3 class="font-iran_Bold mx-3 lg:text-right text-center">فودرو</h3>
-                        <p class="font-iran_Light md:flex hidden text-text_nav mx-3 
-                    lg:text-right text-center">بدون تخفیف رستوران نرو</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-       <!-- services -->
-
-
-        <!-- slider -->
-
-       <div class="relative w-11/12 md:w-3/4 h-[200px] md:h-[350px] overflow-hidden rounded-xl mx-auto my-14" id="slider">
-  <img src="./img/slider/Club.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
-  <img src="./img/slider/Food.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
-  <img src="./img/slider/Market.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
-  
-  <!-- دایره‌ها -->
-  <div class="absolute bottom-4 w-full flex justify-center z-10">
-    <span class="dot w-[10px] h-[10px] mx-1 bg-gray-700 rounded-full cursor-pointer"></span>
-    <span class="dot w-[10px] h-[10px] mx-1 bg-gray-400 rounded-full cursor-pointer"></span>
-    <span class="dot w-[10px] h-[10px] mx-1 bg-gray-400 rounded-full cursor-pointer"></span>
-  </div>
-</div>
-<script>
-  const slides = document.querySelectorAll(".slide");
-  const dots = document.querySelectorAll(".dot");
-  let current = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle("opacity-100", i === index);
-      slide.classList.toggle("opacity-0", i !== index);
-      dots[i].classList.toggle("bg-gray-700", i === index);
-      dots[i].classList.toggle("bg-gray-400", i !== index);
-    });
-  }
-
-  // نمایش اولیه
-  showSlide(current);
-
-  // حرکت خودکار
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 4000);
-
-  // کلیک روی دات
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      current = i;
-      showSlide(current);
-    });
-  });
-</script>
-
-
- <!-- slider -->
-
-
-  <!-- snap -->
-   <div>
-    
-
-    <div class="w-full flex lg:flex-row flex-col ">
-        <div class="w-full xl:w-1/2 xl:h-auto">
-         <img src="./img/slider/super-app.jpg" class="object-cover w-full xl:h-auto h-[215px]" alt="">
-
-        </div>
-        <div class="w-full xl:w-1/2 text-right flex justify-start ">
-            <div class="w-full xl:w-5/6 mt-6 px-6">
-                   <h1 class="text-clamp_intro text-text_nav font-iran_Bold dark:text-white">سوپر اپ اسنپ؛ پاسخی به
-                        تمام نیازها</h1>
-                         <p class="font-iran_Light text-text_bg text-clamp_super_des leading-7 mt-6 dark:text-white">اسنپ،
-                        اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی تردد شهری، به یک سوپر‌اپ با
-                        خدمات متنوع تبدیل شد. سوپراپ اسنپ راه‌حلی جدید و ساده است که با استفاده از آن تنها با یک
-                        اپلیکیشن می‌توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از جمله سفارش غذا، پزشک
-                        و مشاور آنلاین، خرید از سوپرمارکت‌ها و فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)،
-                        رزرو هتل، پرداخت قبض و خرید شارژ استفاده کنید.</p>
-            </div>
-        </div>
-    </div>
-
-
-<div class="w-full xl:translate-y-[-100px] translate-y-7">
-  <div class="flex xl:flex-nowrap flex-wrap justify-around xl:w-2/3 w-full mx-auto">
-    
-    <!-- کارت اول -->
-    <div class="basis-[245px] my-5">
-      <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-easy.png" width="210" height="190" alt="">
-        <div class="px-4 my-3">
-          <h6 class="text-right font-iran_Bold my-3 dark:text-white">آسان</h6>
-          <p class="text-right font-iran_Light text-sm dark:text-white">
-            برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- کارت دوم -->
-    <div class="basis-[245px] my-5">
-      <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-fast.png" width="210" height="190" alt="">
-        <div class="px-4 my-3">
-          <h6 class="text-right font-iran_Bold my-3 dark:text-white">سریع</h6>
-          <p class="text-right font-iran_Light text-sm dark:text-white">
-            خدمات اسنپ با سرعت بالا و زمان‌بندی دقیق در دسترس شما هستند.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- کارت سوم -->
-    <div class="basis-[245px] my-5">
-      <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-eco.png" width="210" height="190" alt="">
-        <div class="px-4 my-3">
-          <h6 class="text-right font-iran_Bold my-3 dark:text-white">اقتصادی</h6>
-          <p class="text-right font-iran_Light text-sm dark:text-white">
-            با هزینه مناسب از خدمات گسترده‌ی اسنپ بهره‌مند شوید.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
- <!-- snap -->
-
-
- <!-- video -->
-  <div class="w-full bg-bg_gray dark:bg-bg_dark1 flex justify-center items-center flex-col">
-        <h1 class="text-3xl font-iran_Bold text-text_bg mt-10 text-center dark:text-white">در کمتر از ۱۰ دقیقه ثبت‌نام
-        کنید و به ناوگان
-        اسنپ بپیوندید.</h1>
-     <p class="font-iran_Light my-5 text-center dark:text-white">بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام
-        مراحل ثبت‌نام را اینترنتی انجام دهید</p>
-
-         <div class="w-auto bg-green_snap text-white font-iran_Bold flex justify-center items-center
-        cursor-pointer py-3 px-6 rounded-md hover:bg-green-500 my-7">ثبت نام رانندگان</div>
-                <div class="lg:w-3/4 w-11/12 rounded-lg overflow-hidden">
-
-            <video class="w-full" controls>
-                <source src="./img/jazbranandeh1.mp4" type="video/mp4">
-            </video>
-
-        </div>
-<div class="lg:w-3/4 w-full flex mx-auto flex-wrap justify-between mb-10">
-
-  <!-- کارت ۱ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-income.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">درآمد تضمینی + پاداش‌های ماهانه و هفتگی</h1>
-      <p class="font-iran_Light text-sm my-2">با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را افزایش دهید.</p>
-    </div>
-  </div>
-
-  <!-- کارت ۲ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-hour.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">ساعت کاری دلخواه</h1>
-      <p class="font-iran_Light text-sm my-2">فعایت در ناوگان اسنپ محدودیت زمانی ندارد و میتوانید فعالیت خود را در هر ساعت از شبانه روز و متناسب با برنامه ی زندگی تان شخصی سازی کنید</p>
-    </div>
-  </div>
-
-  <!-- کارت ۳ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-benefits.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">مزایا و خدمات باشگاه رانندگان</h1>
-      <p class="font-iran_Light text-sm my-2">در باشگاه رانندگان اسنپ میتوانید از تسهیلات و خدمات متنوعی از جمله خودرویی خدمات درمانی و همچنین خدمات رفاهی و آموزشی بهرمند شوید</p>
-    </div>
-  </div>
-
-  <!-- کارت ۴ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-carfix.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">کارفیکس </h1>
-      <p class="font-iran_Light text-sm my-2">باشگاه رانندگان اسنپ به تازگی سرویس جدید اسنپ کارفیکس را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه اندازی کرده است </p>
-    </div>
-  </div>
-
-  <!-- کارت ۵ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/safety.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">امنیت سفر کاربران راننده در اسنپ </h1>
-      <p class="font-iran_Light text-sm my-2">اسنپ با ارائه سرویس امنیت سفر در اپلیکیشن رانندگان و بهبود مستمر امکانات امنیتی این سرویس تلاش می کند تجربه‌ سفر با اسنپ برای کاربران راننده امن و مطمئن باشد</p>
-    </div>
-  </div>
-
-  <!-- کارت ۶ -->
-  <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4 " src="./img/icons/super_app_icon/more/support.png" alt="">
-    <div>
-      <h1 class="font-iran_Bold text-text_bg">پشتیبانی 24 ساعته و سریع </h1>
-      <p class="font-iran_Light text-sm my-2">تیم پشتیبانی اسنپ در تمامی ساعت های شبانه روز پاسخگوی سوال ها و مشکلات کاربران راننده است بخش پشتیبانی در اپلیکیشن رانندگان سریع ترین راه ارتباطی شما با یتم پشتیبانی اسنپ است</p>
-    </div>
-  </div>
-
-</div>
-        
-<!-- video -->
-
-
-<!-- footer -->
-
-  <div class="w-full flex justify-center items-center flex-col my-9">
-
-
-<ul class="flex flex-wrap w-full justify-center font-iran_Light text-sm mx-auto dark:text-white gap-4 break-words">
-  <li><a href="#" class="block text-center">فرصت های شغلی</a></li>
-  <li><a href="#" class="block text-center">بلاگ</a></li>
-  <li><a href="#" class="block text-center">شرایط و قوانین</a></li>
-  <li><a href="#" class="block text-center">پنل سازمانی</a></li>
-  <li><a href="#" class="block text-center">سوالات متداول</a></li>
-  <li><a href="#" class="block text-center">باشگاه رانندگان</a></li>
-  <li><a href="#" class="block text-center">ثبت نام راننده اسنپ</a></li>
-  <li><a href="#" class="block text-center">درباره ما</a></li>
-  <li><a href="#" class="block text-center">تماس با ما</a></li>
-</ul>
-
-
-        <ul class="flex my-9">
-            <li class="mx-2">
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <path stroke="#323232"  class="dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M25.6 12.5c0 8.4-4.8 14.4-13.2 14.4-4.8 0-6.7-2.5-8.4-4.8m0 0l3.6-1.2c-4-4-4.3-10-1.2-14.4 1.5 2.7 4.2 5.2 7.2 6 .1-3.5 2.5-6 6-6 2.4 0 3.8.9 4.8 2.4H28l-2.4 3.6">
-                            </path>
-                            <path d="M0 32V0h32v32z"></path>
-                        </g>
-                    </svg>
-                </a>
-            </li>
-            <li class="mx-2">
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <path stroke="#323232" class="dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M10 4h12a6 6 0 016 6v12a6 6 0 01-6 6H10a6 6 0 01-6-6V10a6 6 0 016-6h0z"></path>
-                            <path class="dark:stroke-white" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M22.6 9c-.2 0-.5.2-.5.4a.5.5 0 10.5-.4M19.4 12.6a4.8 4.8 0 11-6.8 6.8 4.8 4.8 0 016.8-6.8">
-                            </path>
-                            <path d="M0 32V0h32v32z"></path>
-                        </g>
-                    </svg>
-
-                </a>
-            </li>
-            <li class="mx-2">
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" l="" version="1.0" encoding="utf-8" ?="">
-                        <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
-                            style="enable-background:new 0 0 32 32;" xml:space="preserve">
-                            <style type="text/css">
-                            
-                                .st1 {
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                }
-                            </style>
-                            <title>Instagram</title>
-                            <g id="Final">
-                                <g id="Snapp.ir--about-us" transform="translate(-162.000000, -1857.000000)">
-                                    <g id="Instagram" transform="translate(162.000000, 1857.000000)">
-                                        <polygon id="Path_3_" class="st0 fill-none" points="0,32 0,0 32,0 32,32 			"></polygon>
-                                        <path class="st1 fill-none stroke-[#323232] stroke-[1.5] dark:stroke-white" d="M24.3,24H7.7c-2,0-3.7-1.6-3.7-3.7v-8.8C4,9.6,5.6,8,7.7,8h16.7c2,0,3.7,1.6,3.7,3.7v8.8
-                                        C28,22.4,26.4,24,24.3,24z"></path>
-                                    </g>
-                                </g>
-                            </g>
-                            <path class="st1 fill-none stroke-[#323232] stroke-[1.5] dark:stroke-white" d="M18.6,16.7l-4.1,2.4c-0.6,0.3-1.2-0.1-1.2-0.7v-4.7c0-0.6,0.7-1,1.2-0.7l4.1,2.4C19.1,15.6,19.1,16.4,18.6,16.7
-                            z"></path>
-                        </svg>
-                    </svg>
-
-                </a>
-            </li>
-            <li class="mx-2">
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <path stroke="#323232" class="dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M10 4h12a6 6 0 016 6v12a6 6 0 01-6 6H10a6 6 0 01-6-6V10a6 6 0 016-6h0zM10.8 14.8V22">
-                            </path>
-                            <g stroke="#323232" class="dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                <path
-                                    d="M15.6 22v-4.2a3 3 0 013-3h0a3 3 0 013 3V22M10.8 10.5c-.1 0-.3 0-.3.3a.3.3 0 10.3-.3">
-                                </path>
-                            </g>
-                            <path d="M0 32V0h32v32z"></path>
-                        </g>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="mx-2">
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g stroke="#323232" class="dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                <path d="M15.7 22.5L13 25.2a.9.9 0 01-1.5-.4l-1.8-6"></path>
-                                <path
-                                    d="M18.8 14.6l-5.2 4.7c-.5.5-.5 1.3 0 1.7l7.2 5.3c.7.5 1.8.2 2-.7L26.2 9a1 1 0 00-1.4-1.2l-20.7 8a.7.7 0 000 1.3l5.5 1.7">
-                                </path>
-                            </g>
-                            <path d="M0 32V0h32v32z"></path>
-                        </g>
-                    </svg>
-                </a>
-            </li>
-
-
-        </ul>
-
-<div class="flex dark:bg-white dark:p-4 rounded-md">
-    <a href="">
-        <img src="./img/namad/logo.png" class="mx-3" width="130" height="130" alt="">
-    </a>
-    <a href="">
-        <img src="./img/namad/namad.png" class="mx-3" width="130" height="130" alt="">
-    </a>
-</div>
-
-
-
-    </div>
-
-
-
-    <!-- footer -->
-
-<script>
-  const toggleBtn = document.getElementById('themeToggle');
-  const htmlEl = document.documentElement;
-
-  // اگر قبلاً تم ذخیره شده بود
-  if (localStorage.getItem('theme') === 'dark') {
-    htmlEl.classList.add('dark');
-    toggleBtn.textContent = '☀️';
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    htmlEl.classList.toggle('dark');
-
-    if (htmlEl.classList.contains('dark')) {
-      toggleBtn.textContent = '☀️'; // نور
-      localStorage.setItem('theme', 'dark');
-    } else {
-      toggleBtn.textContent = '🌙'; // شب
-      localStorage.setItem('theme', 'light');
-    }
-  });
-</script>
-
-
-
-</body> 
-</html>
