@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>وب سایت اسنپ</title>
-  <base href="/project-snap/"> <!-- ✨ مسیر پایه برای همه فایل‌ها -->
-  <link rel="stylesheet" href="output.css">
-  <link rel="shortcut icon" href="./img/Untitled.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/output.css">
+  <!-- <base href="/project-snap/"> ✨ مسیر پایه برای همه فایل‌ها -->
+  <link rel="shortcut icon" href="./src/img/Untitled.png" type="image/x-icon">
 </head>
 <body class="dark:bg-bg_dark1">
     <!--nav-->
@@ -18,9 +18,9 @@
             <path fill-rule="evenodd"
              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
          </svg>
-             <img src="./img/snappTextLogo.svg" alt="">
+             <img src="./src/img/snappTextLogo.svg" alt="">
             </div>
-             <img src="./img/snappTextLogo.svg" class="md:flex hidden" alt="">
+             <img src="./src/img/snappTextLogo.svg" class="md:flex hidden" alt="">
              <ul class="md:flex hidden justify-start items-center text-clamp dark:text-white font-iran_Light mx-7 list-none h-55px">
                 <li class="flex justify-start items-center font-iran_Light relative cursor-default group/item hover:text-green_snap ">سوپر اپ اسنپ
                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
@@ -186,7 +186,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
        <div class="border border-text_muted rounded-md text-black px-4 py-3 cursor-pointer
       font-iran_Light mt-8 mb-3 md:hidden flex justify-center items-center bg-white w-full">دانلود اپلیکیشن اسنپ</div>
         </div>
-        <img src="./img/intro_desktop.jpg" class="hidden md:flex md:w-1/3 lg:w-1/2 object-cover"
+        <img src="./src/img/intro_desktop.jpg" class="hidden md:flex md:w-1/3 lg:w-1/2 object-cover"
             style="transform: scaleX(-1);" alt="">
 
      </div>
@@ -194,11 +194,11 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
       <!-- image_market -->
        <div class="hidden md:flex flex-wrap w-3/4 justify-around items-center mx-auto my-20 ">
-        <img class="my-2" height="47" width="160" src="./img/market/app_store.svg" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/bazaar.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/direct-download-badge.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/myketmarket.png" alt="">
-        <img class="my-2" height="47" width="160" src="./img/market/snapp-pwa.png" alt="">
+        <img class="my-2" height="47" width="160" src="./src/img/market/app_store.svg" alt="">
+        <img class="my-2" height="47" width="160" src="./src/img/market/bazaar.png" alt="">
+        <img class="my-2" height="47" width="160" src="./src/img/market/direct-download-badge.png" alt="">
+        <img class="my-2" height="47" width="160" src="./src/img/market/myketmarket.png" alt="">
+        <img class="my-2" height="47" width="160" src="./src/img/market/snapp-pwa.png" alt="">
        </div>
 
 
@@ -491,9 +491,9 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
         <!-- slider -->
 
        <div class="relative w-11/12 md:w-3/4 h-[200px] md:h-[350px] overflow-hidden rounded-xl mx-auto my-14" id="slider">
-  <img src="./img/slider/Club.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
-  <img src="./img/slider/Food.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
-  <img src="./img/slider/Market.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
+  <img src="./src/img/slider/Club.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
+  <img src="./src/img/slider/Food.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
+  <img src="./src/img/slider/Market.jpg" class="slide w-full h-full object-cover absolute opacity-0 transition-opacity duration-700" alt="">
   
   <!-- دایره‌ها -->
   <div class="absolute bottom-4 w-full flex justify-center z-10">
@@ -544,7 +544,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
     <div class="w-full flex lg:flex-row flex-col ">
         <div class="w-full xl:w-1/2 xl:h-auto">
-         <img src="./img/slider/super-app.jpg" class="object-cover w-full xl:h-auto h-[215px]" alt="">
+         <img src="./src/img/slider/super-app.jpg" class="object-cover w-full xl:h-auto h-[215px]" alt="">
 
         </div>
         <div class="w-full xl:w-1/2 text-right flex justify-start ">
@@ -568,7 +568,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
     <!-- کارت اول -->
     <div class="basis-[245px] my-5">
       <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-easy.png" width="210" height="190" alt="">
+        <img src="./src/img/icons/super_app_icon/210x190-easy.png" width="210" height="190" alt="">
         <div class="px-4 my-3">
           <h6 class="text-right font-iran_Bold my-3 dark:text-white">آسان</h6>
           <p class="text-right font-iran_Light text-sm dark:text-white">
@@ -581,7 +581,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
     <!-- کارت دوم -->
     <div class="basis-[245px] my-5">
       <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-fast.png" width="210" height="190" alt="">
+        <img src="./src/img/icons/super_app_icon/210x190-fast.png" width="210" height="190" alt="">
         <div class="px-4 my-3">
           <h6 class="text-right font-iran_Bold my-3 dark:text-white">سریع</h6>
           <p class="text-right font-iran_Light text-sm dark:text-white">
@@ -594,7 +594,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
     <!-- کارت سوم -->
     <div class="basis-[245px] my-5">
       <div class="bg-bg_gray rounded-3xl">
-        <img src="./img/icons/super_app_icon/210x190-eco.png" width="210" height="190" alt="">
+        <img src="./src/img/icons/super_app_icon/210x190-eco.png" width="210" height="190" alt="">
         <div class="px-4 my-3">
           <h6 class="text-right font-iran_Bold my-3 dark:text-white">اقتصادی</h6>
           <p class="text-right font-iran_Light text-sm dark:text-white">
@@ -622,7 +622,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
                 <div class="lg:w-3/4 w-11/12 rounded-lg overflow-hidden">
 
             <video class="w-full" controls>
-                <source src="./img/jazbranandeh1.mp4" type="video/mp4">
+                <source src="./src/img/jazbranandeh1.mp4" type="video/mp4">
             </video>
 
         </div>
@@ -630,7 +630,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۱ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-income.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./src/img/icons/super_app_icon/more/180x100-income.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">درآمد تضمینی + پاداش‌های ماهانه و هفتگی</h1>
       <p class="font-iran_Light text-sm my-2">با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را افزایش دهید.</p>
@@ -639,7 +639,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۲ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-hour.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./src/img/icons/super_app_icon/more/180x100-hour.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">ساعت کاری دلخواه</h1>
       <p class="font-iran_Light text-sm my-2">فعایت در ناوگان اسنپ محدودیت زمانی ندارد و میتوانید فعالیت خود را در هر ساعت از شبانه روز و متناسب با برنامه ی زندگی تان شخصی سازی کنید</p>
@@ -648,7 +648,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۳ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-benefits.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./src/img/icons/super_app_icon/more/180x100-benefits.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">مزایا و خدمات باشگاه رانندگان</h1>
       <p class="font-iran_Light text-sm my-2">در باشگاه رانندگان اسنپ میتوانید از تسهیلات و خدمات متنوعی از جمله خودرویی خدمات درمانی و همچنین خدمات رفاهی و آموزشی بهرمند شوید</p>
@@ -657,7 +657,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۴ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/180x100-carfix.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./src/img/icons/super_app_icon/more/180x100-carfix.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">کارفیکس </h1>
       <p class="font-iran_Light text-sm my-2">باشگاه رانندگان اسنپ به تازگی سرویس جدید اسنپ کارفیکس را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه اندازی کرده است </p>
@@ -666,7 +666,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۵ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./img/icons/super_app_icon/more/safety.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4" src="./src/img/icons/super_app_icon/more/safety.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">امنیت سفر کاربران راننده در اسنپ </h1>
       <p class="font-iran_Light text-sm my-2">اسنپ با ارائه سرویس امنیت سفر در اپلیکیشن رانندگان و بهبود مستمر امکانات امنیتی این سرویس تلاش می کند تجربه‌ سفر با اسنپ برای کاربران راننده امن و مطمئن باشد</p>
@@ -675,7 +675,7 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
   <!-- کارت ۶ -->
   <div class="lg:w-[48%] w-11/12 mx-auto bg-white rounded-xl flex lg:flex-row flex-col mt-7 px-9 py-10">
-    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4 " src="./img/icons/super_app_icon/more/support.png" alt="">
+    <img class="lg:w-[120px] lg:h-[66px] w-[80px] mx-auto mb-4 " src="./src/img/icons/super_app_icon/more/support.png" alt="">
     <div>
       <h1 class="font-iran_Bold text-text_bg">پشتیبانی 24 ساعته و سریع </h1>
       <p class="font-iran_Light text-sm my-2">تیم پشتیبانی اسنپ در تمامی ساعت های شبانه روز پاسخگوی سوال ها و مشکلات کاربران راننده است بخش پشتیبانی در اپلیکیشن رانندگان سریع ترین راه ارتباطی شما با یتم پشتیبانی اسنپ است</p>
@@ -803,10 +803,10 @@ bg-white dark:bg-bg_dark2 flex-col justify-start items-start font-iran_Bold roun
 
 <div class="flex dark:bg-white dark:p-4 rounded-md">
     <a href="">
-        <img src="./img/namad/logo.png" class="mx-3" width="130" height="130" alt="">
+        <img src="./src/img/namad/logo.png" class="mx-3" width="130" height="130" alt="">
     </a>
     <a href="">
-        <img src="./img/namad/namad.png" class="mx-3" width="130" height="130" alt="">
+        <img src="./src/img/namad/namad.png" class="mx-3" width="130" height="130" alt="">
     </a>
 </div>
 
