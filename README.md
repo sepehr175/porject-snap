@@ -43,3 +43,4 @@
    ```bash
    git clone https://github.com/your-username/snapp-3d-clone.git
    cd snapp-3d-clone
+و اگر خواستید فقط خروجی پروژه رو ببینید به لینک رو به رو بروید                                                   https://sepehr175.github.io/project-snap/
